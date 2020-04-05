@@ -1,6 +1,3 @@
-Thanks for downloading this template!
-
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Curriculum Vitae - Yusuf Azhar Zaini
+Description : Explaining about me from education to the experience that has been achieved to date.
+Updated : 05-04-2020
