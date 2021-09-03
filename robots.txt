@@ -1,1 +1,2 @@
 https://www.google.com/ping?sitemap=https://https://yusufazharzaini.dev/sitemap.xml
+Sitemap: https://yusufazharzaini.dev/sitemap.xml
