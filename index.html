@@ -584,26 +584,27 @@
 
 	    <!-- Owl Carousel -->
 	<script>
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                items: 5,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-		slideTransition: 'linear',
-		lazyLoad: true,
-		smartSpeed: 250,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-              });
-              $('.play').on('click', function() {
-                owl.trigger('play.owl.autoplay', [0])
-              })
-              $('.stop').on('click', function() {
-                owl.trigger('stop.owl.autoplay')
-              })
-            })
+            $(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 3,
+    loop: true,
+    margin: 20,
+    nav: true,
+    navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+    responsive:{
+      0:{
+        items:1
+      },
+      768:{
+        items:2
+      },
+      1024:{
+        items:3
+      }
+    }
+  });
+});
+
           </script>
 	
     <!-- Template Main JS File -->
