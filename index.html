@@ -462,10 +462,11 @@
                 <div class="row certificate-content">
                     <div class="owl-carousel owl-theme owl-loaded">
 			    <div class="owl-stage-outer">
-			        <div class="owl-stage">
-			            <div class="owl-item"><img src="https://vignette.wikia.nocookie.net/webbrowser/images/7/76/150px-Google_Chrome_2011_logo.png/revision/latest?cb=20110920061427" class="img-responsive" alt="logo1"></div>
-			            <div class="owl-item"><img src="https://vignette.wikia.nocookie.net/webbrowser/images/7/76/150px-Google_Chrome_2011_logo.png/revision/latest?cb=20110920061427" class="img-responsive" alt="logo2"></div>
-			            <div class="owl-item"><img src="https://vignette.wikia.nocookie.net/webbrowser/images/7/76/150px-Google_Chrome_2011_logo.png/revision/latest?cb=20110920061427" class="img-responsive" alt="logo3"></div>
+			        <div class="owl-stage" style="width: 12rem;">
+			            <div class="owl-item"><img src="assets/img/codepolitan.png" class="img-responsive" alt="logo1"></div>
+			            <div class="owl-item"><img src="assets/img/Born to Protect.png" class="img-responsive" alt="logo2"></div>
+			            <div class="owl-item"><img src="assets/img/Rosma.png" class="img-responsive" alt="logo3"></div>
+				    <div class="owl-item"><img src="assets/img/neliti.png" class="img-responsive" alt="logo3"></div>
 			        </div>
 			    </div>
 			    <div class="owl-dots">
@@ -581,14 +582,16 @@
     <script src="assets/js/main.js"></script>
     <!-- Owl Carousel -->
     <script>
-	    var owl = $('.owl-carousel');
+	var owl = $('.owl-carousel');
 		owl.owlCarousel({
-		    items:4,
-		    loop:true,
-		    margin:10,
-		    autoplay:true,
-		    autoplayTimeout:3000,
-		    autoplayHoverPause:true
+			items: 8,
+	        	loop: true,
+	        	margin: 20,
+	        	autoplay: true,
+	        	slideTransition: 'linear',
+	        	autoplayTimeout: 0,
+			autoplaySpeed: 3000,
+			autoplayHoverPause: false
 		});
 		$('.play').on('click',function(){
 		    owl.trigger('play.owl.autoplay',[3000])
