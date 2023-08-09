@@ -587,12 +587,14 @@
 	$(document).ready(function() {
               var owl = $('.owl-carousel');
               owl.owlCarousel({
-                items: 7,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
+                items: 5,
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 0,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: false
               });
         $('.play').on('click', function() {
                 owl.trigger('play.owl.autoplay', [3000])
