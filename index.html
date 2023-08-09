@@ -460,16 +460,16 @@
                 </div>
 
                 <div class="row certificate-content">
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel owl-theme owl-loaded">
 			    <div class="owl-stage-outer">
 			        <div class="owl-stage" style="width: 12rem;">
-			            <div class="owl-item"><img src="assets/img/codepolitan.png" class="img-responsive" alt="logo1"></div>
-			            <div class="owl-item"><img src="assets/img/Born to Protect.png" class="img-responsive" alt="logo2"></div>
-			            <div class="owl-item"><img src="assets/img/Rosma.png" class="img-responsive" alt="logo3"></div>
-				    <div class="owl-item"><img src="assets/img/neliti.png" class="img-responsive" alt="logo4"></div>
-				    <div class="owl-item"><img src="assets/img/Tensai.png" class="img-responsive" alt="logo5"></div>
-			   <div class="owl-item"><img src="assets/img/Nikkou.png" class="img-responsive" alt="logo6"></div>
-    <div class="owl-item"><img src="assets/img/Fast.png" class="img-responsive" alt="logo7"></div> 
+			            <div class="owl-item"><img src="assets/img/codepolitan.png" class="img-responsive" alt="Codepolitan"></div>
+			            <div class="owl-item"><img src="assets/img/Born to Protect.png" class="img-responsive" alt="Born to Protect"></div>
+			            <div class="owl-item"><img src="assets/img/Rosma.png" class="img-responsive" alt="STMIK Rosma Karawang"></div>
+				    <div class="owl-item"><img src="assets/img/neliti.png" class="img-responsive" alt="Neliti"></div>
+				    <div class="owl-item"><img src="assets/img/Tensai.png" class="img-responsive" alt="Tensai Nikkou Gakkouin"></div>
+			   <div class="owl-item"><img src="assets/img/Nikkou.png" class="img-responsive" alt="Nikkou Gakkou"></div>
+    <div class="owl-item"><img src="assets/img/Fast.png" class="img-responsive" alt="First Study Japanese"></div> 
 </div>
 			    </div>
 			    <div class="owl-dots">
@@ -584,17 +584,23 @@
 
 	    <!-- Owl Carousel -->
 	<script>
-		var owl = $('.owl-carousel');
-		owl.owlCarousel({
-			items: 4,
-			loop: true,
-	        	margin: 20,
-	        	autoplay: true,
-	        	slideTransition: 'linear',
-	        	autoplayTimeout: 0,
-			autoplaySpeed: 3000,
-			autoplayHoverPause: false
-		});
+	$(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 7,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+              });
+        $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [3000])
+              })
+        $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
     </script>
 	
     <!-- Template Main JS File -->
