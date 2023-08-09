@@ -592,12 +592,11 @@
                 margin: 10,
                 autoplay: true,
 		slideTransition: 'linear',
-                autoplayTimeout: 0,
-		autoplaySpeed: 3000,
+                autoplayTimeout: 3000,
                 autoplayHoverPause: true
               });
               $('.play').on('click', function() {
-                owl.trigger('play.owl.autoplay', [0])
+                owl.trigger('play.owl.autoplay', [3000])
               })
               $('.stop').on('click', function() {
                 owl.trigger('stop.owl.autoplay')
